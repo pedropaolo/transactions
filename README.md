@@ -1,33 +1,22 @@
--- REGISTROS DE TRANSAÇÕES
+## REGISTRO DE TRANSAÇÕES - Pedro Paolo de Oliveira Picinin
 
-RESUMO DA APLICAÇÃO
+## INICIALIZAÇÃO
 
-Aplicação desenvolvida em React.Js, durante o desenvolvimento do segundo módulo do curso Ignite da RocketSeat (https://app.rocketseat.com.br/ignite) objetivando a familiarização do aluno com os seguintes conceitos:
+-- Utilize o script pré-configurado: dentro da pasta do projeto -> yarn start
 
-- Criação da estrutura da aplicação através do create-react-app
+## RESUMO DA APLICAÇÃO
 
-- Componentização: Criação de componentes e implementação dos mesmos no projeto.
+-- É possível cadastrar transações de depósito e de retirada; As transações são registradas no banco simulado pelo MIRAGEjs e apresentadas na tela. Todas as operações são realizadas através de um formulário na forma de um Modal. Como a aplicação não utiliza um banco de dados verdadeiro, os dados não persistem caso a aplicação seja recarregada.
 
-- Consumir API: criando FrontEnd sem um backend através do MirageJS, utilização do Axios.
+-- Tecnologias Utilizadas:
+- create-react-app - estrutura inicial
+- Axios - Requisição dos dados
+- Miragejs - Banco de dados simulado (https://miragejs.com/) 
+- Contexto - compartilhamento de dados entre os componentes
+- Styled-components - Estilização (https://styled-components.com/)
 
-- Utilização de bibliotecas de componentes nativas do React: Criação de Modal para preenchimento de formulário
-
-- Utilização de Contextos e Hooks
-
-
--- É possível cadastrar transações de depósito e de retirada; As transações são registradas no banco fake do mirage e apresentadas na tela. Todas as operações são realizadas através de um formulário na forma de um Modal. Como a aplicação não utiliza um banco de dados verdadeiro, os dados não persistem caso a aplicação seja recarregada.
-
--- A estilização foi feita utilizando o styled-components
-
---Todos os pacotes instalados para implementação do projeto estão listadas no arquivo "package.json"
-
-INICIALIZAÇÃO
-
---Utilize o script pré-configurado: dentro da pasta do projeto -> yarn start
-
-
-<------------------------------------------------------------------------------------------------------------->
+## OBSERVAÇÕES
 
 OBS: Importante! Atenção à linha 8 do arquivo App.tsx
-
 Modal.setAppElement('#root');
+
